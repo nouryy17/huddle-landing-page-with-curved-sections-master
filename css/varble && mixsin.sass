@@ -1,0 +1,68 @@
+$Pink: hsl(322, 100%, 66%)
+$Very-Pale-Cyan:hsl(193, 100%, 96%)
+$Very-Dark-Cyan: hsl(192, 100%, 9%)
+$Light-Pink: hsl(321, 100%, 78%)
+$Light-Red: hsl(0, 100%, 63%)
+
+@mixin for-size($size) 
+    @if $size == phone-only 
+       @media (max-width: 375px) 
+        @content 
+    @else if $size == mobile-small 
+       @media (max-width: 480px) 
+        @content 
+    @else if $size == max-mobile 
+       @media (max-width: 767px) 
+         @content 
+    @else if $size == tablet-landscape 
+       @media (max-width: 991px) 
+        @content 
+    @else if $size == tablet-landscape-up 
+       @media (max-width: 1024px) 
+        @content 
+    @else if $size == desktop-up 
+       @media (max-width: 1200px)  
+        @content
+    @else if $size == desktop
+       @media (min-width: 1200px)  
+        @content
+    @else if $size == big-desktop-up 
+       @media (min-width: 1600px) 
+        @content 
+
+// @mixin button($color,$color2)
+  
+//   background: linear-gradient(90deg, $color,$color2 100%)
+//   color: white
+//   border-radius: 20px
+//   padding: 9px 23px
+//   border: none
+//   cursor: pointer
+// @mixin button-hover
+//   opacity: 0.8
+//   transition: 0.5s
+ul
+  list-style: none
+  display: flex
+  gap: 20px
+  @include for-size(max-mobile)
+     flex-direction: column
+
+a
+  text-decoration: none
+  color: white
+h1,h2,
+h3,h4,
+h5,
+h6
+  font-family: "Poppins", sans-serif
+  font-weight: 600
+  font-style: normal
+p,span,button
+  font-family: "Open Sans", sans-serif
+html,body
+   margin: 0
+   padding: 0
+   width: 100%
+   height: 100%
+   overflow-x: hidden
