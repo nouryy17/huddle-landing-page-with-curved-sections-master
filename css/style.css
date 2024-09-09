@@ -149,11 +149,12 @@ section div {
 section div.GrowTougther::after, section div.FlowingConversations::after, section div.YourUser::after {
   content: "";
   position: absolute;
-  top: -143px;
+  top: -78px;
   left: 0;
   width: 100%;
   background-image: url(../images/bg-section-top-desktop-1.svg);
-  background-size: cover;
+  background-size: 112% 43%;
+  background-repeat: no-repeat;
   height: 180px;
   z-index: -1;
 }
@@ -174,6 +175,9 @@ section div.GrowTougther::before, section div.FlowingConversations::before, sect
   background-size: cover;
   background-image: url("../images/bg-section-bottom-desktop-1.svg");
   z-index: -1;
+  background-position: center;
+  background-size: 142% 85%;
+  background-repeat: no-repeat;
 }
 @media (max-width: 375px) {
   section div.GrowTougther::before, section div.FlowingConversations::before, section div.YourUser::before {
