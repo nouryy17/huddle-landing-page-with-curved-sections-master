@@ -50,7 +50,7 @@ html, body {
   justify-content: space-between;
   height: 80px;
 }
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   .header .part-one {
     flex-direction: column;
     padding: 10px;
@@ -218,6 +218,7 @@ section div .Img img {
 }
 section div.lastDiv {
   flex-direction: column;
+  width: -moz-fit-content;
   width: fit-content;
   margin: auto;
 }
@@ -374,6 +375,4 @@ footer .tow form .text {
     margin: 0;
     margin-bottom: 10px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
